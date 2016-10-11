@@ -36,5 +36,16 @@ namespace Bangazon.Orders
 
       return output;
     }
+
+    public bool removeProduct(string product)
+    {
+      return _products.Remove(product);
+    }
+
+    public void removeProduct()
+    {
+      _products.Clear();
+    }
+
   }
 }
